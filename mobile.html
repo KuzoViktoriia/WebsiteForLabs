@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Автосалон</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="logo.png">
+			<h1>Автосалон</h1>
+		</div>
+		<nav>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li><a href="#">Пункт 1</a></li>
+        <li><a href="#">Пункт 2</a>
+          <ul>
+            <li><a href="#">Підпункт 2.1</a></li>
+            <li><a href="#">Підпункт 2.2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Пункт 3</a></li>
+      </ul>
+    </nav>    
+	</header>
+	<main>
+		<section id="carousel">
+            <h2>Найпопулярніші автомобілі</h2>
+            <div class="carousel-container">
+              <div class="carousel-slide">
+                <img src="car1.jpg" alt="Автомобіль 1">
+              </div>
+              <div class="carousel-slide">
+                <img src="car2.jpg" alt="Автомобіль 2">
+              </div>
+              <div class="carousel-slide">
+                <img src="car3.jpg" alt="Автомобіль 3">
+              </div>
+              <div class="carousel-slide">
+                <img src="car4.jpg" alt="Автомобіль 4">
+              </div>
+            </div>
+            <button class="carousel-button carousel-button-prev">&#8249;</button>
+            <button class="carousel-button carousel-button-next">&#8250;</button>
+          </section>
+          
+          <section id="info">
+            <div class="container">
+              <div class="info-block">
+                <h2>Про нас</h2>
+                <p>Ми - автосалон, що пропонує широкий вибір автомобілів різних марок та моделей. Наша команда професіоналів готова надати Вам послуги з підтримки та ремонту автомобілів.</p>
+              </div>
+              <div class="info-block">
+                <h2>Наші послуги</h2>
+                <ul>
+                  <li>Продаж нових та б/у автомобілів</li>
+                  <li>Обмін автомобілів</li>
+                  <li>Фінансування автомобілів</li>
+                  <li>Підтримка автомобілів</li>
+                  <li>Ремонт та заміна запчастин</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+          <section id="news">
+            <div class="container">
+              <h2 class="section-title">Останні новини та події</h2>
+              <div class="news-list">
+                <div class="news-item">
+                  <div class="news-image">
+                    <img src="news1.jpg" alt="Новина 1">
+                  </div>
+                  <div class="news-content">
+                    <h3 class="news-title">Відкриття нового сервісного центру</h3>
+                    <p class="news-date">20 квітня 2023</p>
+                    <p class="news-text">Ми з радістю оголошуємо про відкриття нашого нового сервісного центру. З новим центром ми зможемо надавати ще більш широкий спектр послуг нашим клієнтам та забезпечувати ще вищу якість обслуговування.</p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-image">
+                    <img src="news2.jpg" alt="Новина 2">
+                  </div>
+                  <div class="news-content">
+                    <h3 class="news-title">Нові моделі від BMW</h3>
+                    <p class="news-date">15 квітня 2023</p>
+                    <p class="news-text">Ми раді представити нові моделі від BMW, які вже доступні для замовлення в нашому автосалоні. Запрошуємо вас ознайомитись з цими автомобілями та обрати свій ідеальний варіант.</p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-image">
+                    <img src="news3.jpg" alt="Новина 3">
+                  </div>
+                  <div class="news-content">
+                    <h3 class="news-title">Акція на сервісне обслуговування</h3>
+                    <p class="news-date">10 квітня 2023</p>
+                    <p class="news-text">Для всіх наших клієнтів ми проводимо спеціальну акцію на сервісне обслуговування. Знижка 20% на всі види послуг, діють усі місяць.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="testimonials">
+            <h2>Відгуки клієнтів</h2>
+            <div class="testimonial">
+              <p>Дуже задоволений своєю покупкою. Автомобіль відповідає усім моїм вимогам. Рекомендую!</p>
+              <p class="author">- Іван, м. Київ</p>
+            </div>
+            <div class="testimonial">
+              <p>Велике спасибі менеджерам автосалону за допомогу з вибором автомобіля. Він чудово підійшов для моїх потреб. Обов'язково пораджу друзям!</p>
+              <p class="author">- Олексій, м. Львів</p>
+            </div>
+            <form action="/submit-testimonial" method="post">
+              <h3>Додати відгук</h3>
+              <label for="name">Ім'я:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Повідомлення:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">Надіслати</button>
+            </form>
+          </section>
+          
+          <section id="contact">
+            <h2>Зв'язатися з нами</h2>
+            <form>
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+        
+		<section id="services">
+            <div class="container">
+              <h2>Наші послуги</h2>
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="service-box">
+                    <i class="fa fa-car"></i>
+                    <h3>Продаж автомобілів</h3>
+                    <p>Ми пропонуємо широкий вибір автомобілів з різних країн виробників. У нас ви знайдете як нові автомобілі, так і б/у.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="service-box">
+                    <i class="fa fa-wrench"></i>
+                    <h3>Ремонт автомобілів</h3>
+                    <p>Наш сервісний центр пропонує повний спектр послуг з ремонту автомобілів. Ми використовуємо тільки якісні запчастини.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="service-box">
+                    <i class="fa fa-gear"></i>
+                    <h3>Заміна запчастин</h3>
+                    <p>Ми пропонуємо широкий вибір якісних запчастин для вашого автомобіля. Ви можете замовити необхідну деталь у нас.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="service-box">
+                    <i class="fa fa-tachometer"></i>
+                    <h3>Технічне обслуговування</h3>
+                    <p>Наші майстри здійснять технічне обслуговування вашого автомобіля відповідно до рекомендацій виробника.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="service-box">
+                    <i class="fa fa-paint-brush"></i>
+                    <h3>Фарбування автомобілів</h3>
+                    <p>Наші майстри виконають якісне фарбування вашого автомобіля в короткі терміни за доступною ціною.</p>
+                  </div>
+                </div>
+            </div>
+        </section>        
+	</main>
+	<footer>
+        <div class="footer-info">
+          <h3>Контактна інформація</h3>
+          <p>Адреса: 123456, м. Приклад, вул. Прикладна, 1</p>
+          <p>Телефон: +38 (123) 456-78-90</p>
+          <p>Email: example@example.com</p>
+        </div>
+        <div class="footer-links">
+          <h3>Посилання</h3>
+          <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Наші послуги</a></li>
+            <li><a href="#">Наші автомобілі</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Слідкуйте за нами в соціальних мережах</h3>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+      
+</body>
+</html>
